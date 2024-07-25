@@ -28,25 +28,20 @@ dependencies:
 
   cupertino_icons: ^1.0.6
   sizer: ^2.0.15
-  get: ^4.6.5
-  sqflite: 2.3.2
-  path: ^1.8.3
+  get: ^4.6.6
+  sqflite: ^2.3.3+1
+  path: ^1.9.0
+  equatable: ^2.0.5
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  mockito: ^5.4.4
+  sqflite_common_ffi:
 
-  # The "flutter_lints" package below contains a set of recommended lints to
-  # encourage good coding practices. The lint set provided by the package is
-  # activated in the `analysis_options.yaml` file located at the root of your
-  # package. See that file for information about deactivating specific lint
-  # rules and activating additional ones.
   flutter_lints: ^3.0.0
 
-# For information on the generic Dart part of this file, see the
-# following page: https://dart.dev/tools/pub/pubspec
 
-# The following section is specific to Flutter packages.
 flutter:
 
   # The following line ensures that the Material Icons font is

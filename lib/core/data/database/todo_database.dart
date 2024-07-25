@@ -10,12 +10,12 @@ class TodoDatabase {
       join(await getDatabasesPath(), 'todo_md_labs.db'),
       version: 1,
       onOpen: (Database db) async {
-        await _createDatabaseTablesIfNotExists(database: db);
+        await createDatabaseTablesIfNotExists(database: db);
       },
     );
   }
 
-  static Future<void> _createDatabaseTablesIfNotExists({
+  static Future<void> createDatabaseTablesIfNotExists({
     required Database database,
   }) async {
     final batch = database.batch();
