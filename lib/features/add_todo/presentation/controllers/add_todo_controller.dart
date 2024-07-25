@@ -32,4 +32,10 @@ class AddTodoController extends GetxController {
     await todoRepository.addTodo(todo: todo);
     Get.back();
   }
+
+  @override
+  void dispose() {
+    todoTitleController.dispose();
+    super.dispose();
+  }
 }
